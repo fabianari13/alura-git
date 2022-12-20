@@ -4,14 +4,21 @@ git add .
 git commit -m "mensaje"
 git rm --cached archivo.txt
 git config --local user.name "Tu nombre aquí" //solo para este repositorio y carpeta
-git config --local user.email "Tu@email.aqui” //solo para este repositorio y carpeta
+git config --local user.email "Tu@email.aqui" //solo para este repositorio y carpeta
 git log
 git config --global user.name "Tu nombre aquí" //para todos los proyectos en la computadora
-git config --global user.email "Tu@email.aqui” //para todos los proyectos en la computadora
+git config --global user.email "Tu@email.aqui" //para todos los proyectos en la computadora
 git config user.name
 git log --oneline
 git log -p //ver todas las modificaciones
 git remote add servidorlocal c:/user/...
+git remote add servidorlocal /home/fabianari/Documentos/"ONE Alura Cursos"/"3 GIT Y GITHUB"/servidor/~
+//colocar entre comillas si la carpeta tiene espacios en su nombre.
+git init --bare
 git remote
 git remote -v
-git clone 
+fetch --> lugar de donde vamos a obtener info.
+push--> lugar a donde vamos a enviar info.
+git clone /home/fabianari/Documentos/"ONE Alura Cursos"/"3 GIT Y GITHUB"/servidor/ proyecto
+git push servidorlocal master
+git remote rename origin local 
